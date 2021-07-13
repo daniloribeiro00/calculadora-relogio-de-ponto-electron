@@ -1,16 +1,16 @@
 # Calculadora de Horas Trabalhadas (Relógio de Ponto)
 
-Calculadora de Horas Trabalhadas (Relógio de Ponto) desenvolvido Electron, React JS, TypeScript e Styled Components.
+Calculadora de Horas Trabalhadas (Relógio de Ponto) desenvolvida com Electron, React JS, TypeScript e Styled Components.
 
-Baseado no boilerplate desenvolvido por Diego Fernandes, disponível no [aqui](https://github.com/diego3g/electron-typescript-react).
+Baseado no boilerplate desenvolvido por Diego Fernandes, disponível [aqui](https://github.com/diego3g/electron-typescript-react).
 
 <hr>
 
 ## Instalação
 
-Clone o repositório para sua máquina e, em seguida, execute o seguinte comando:
+OBS: É necessário ter o [Node.js](https://nodejs.org/pt-br/) e o [Yarn](https://yarnpkg.com) instalado em sua máquina.
 
-OBS: É necessário ter o [Node.js](https://nodejs.org/pt-br/) e o [yarn](https://yarnpkg.com) instalado em sua máquina.
+Clone o repositório para sua máquina e, em seguida, execute o seguinte comando:
 
 ```bash
 yarn
