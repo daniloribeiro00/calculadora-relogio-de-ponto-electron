@@ -15,22 +15,22 @@
 		"lint": "eslint . --ext js,ts",
 		"test": "jest",
 		"pack": "electron-builder --dir",
-		"dist:windows": "yarn electron-forge package && yarn electron-builder --x64 --ia32",
-		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --x64",
-		"dist:mac": "yarn electron-forge package && yarn electron-builder --mac"
+		"dist:windows": "yarn electron-forge package && yarn electron-builder --windows --x64 --ia32 --arm64",
+		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --x64 --arm64",
+		"dist:mac": "yarn electron-forge package && yarn electron-builder --mac --x64 --arm64"
 	},
 	"build": {
-		"appId": "com.calculadoradehoras.app",
+		"appId": "com.daniloribeiro.calculadoradehoras",
 		"productName": "Calculadora de Horas",
 		"copyright": "Danilo Ribeiro",
 		"mac": {
 			"category": "public.app-category.productivity",
-			"icon": "./assets/calculator.png"
+			"icon": "./assets/favicon.icns"
 		},
 		"win": {
 			"appId": "DaniloRibeiro.CalculadoraDeHoras.App.v1",
 			"target": "nsis",
-			"icon": "./assets/calculator.icns",
+			"icon": "./assets/calculator.png",
 			"publisherName": "Danilo Ribeiro"
 		},
 		"nsis": {
@@ -47,7 +47,11 @@
 		},
 		"linux": {
 			"target": "deb",
-			"category": "Utility"
+			"icon": "./assets/linux",
+			"category": "Utility",
+			"packageCategory": "utils",
+			"maintainer": "Danilo Ribeiro <danilo.ribeiro00d@gmail.com>",
+			"synopsis": "Calculadora de Horas Trabalhadas"
 		}
 	},
 	"keywords": [],

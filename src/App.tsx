@@ -8,7 +8,7 @@ export function App() {
 		<>
 			<GlobalStyle />
 			<Header />
-      <Main />
+      		<Main />
 		</>
 	);
 }
