@@ -15,15 +15,19 @@
 		"lint": "eslint . --ext js,ts",
 		"test": "jest",
 		"pack": "electron-builder --dir",
-		"dist:windows": "yarn electron-forge package && yarn electron-builder --windows --x64 --ia32 --arm64",
-		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --x64 --arm64",
-		"dist:mac": "yarn electron-forge package && yarn electron-builder --mac --x64 --arm64"
+		"dist:windows": "yarn electron-forge package && yarn electron-builder --windows --ia32 --x64",
+		"dist:windows-arm": "yarn electron-forge package && yarn electron-builder --windows --arm64",
+		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --ia32 --x64",
+		"dist:linux-arm": "yarn electron-forge package && yarn electron-builder --linux --arm64",
+		"dist:mac": "yarn electron-forge package && yarn electron-builder --mac --ia32 --x64",
+		"dist:mac-arm": "yarn electron-forge package && yarn electron-builder --mac --arm64"
 	},
 	"build": {
 		"appId": "com.daniloribeiro.calculadoradehoras",
 		"productName": "Calculadora de Horas",
 		"copyright": "Danilo Ribeiro",
 		"mac": {
+			"target": "dmg",
 			"category": "public.app-category.productivity",
 			"icon": "./assets/favicon.icns"
 		},
