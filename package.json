@@ -16,7 +16,8 @@
 		"test": "jest",
 		"pack": "electron-builder --dir",
 		"dist:windows": "yarn electron-forge package && yarn electron-builder --x64 --ia32",
-		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --x64 --ia32"
+		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --x64",
+		"dist:mac": "yarn electron-forge package && yarn electron-builder --mac"
 	},
 	"build": {
 		"appId": "com.calculadoradehoras.app",
@@ -29,7 +30,7 @@
 		"win": {
 			"appId": "DaniloRibeiro.CalculadoraDeHoras.App.v1",
 			"target": "nsis",
-			"icon": "./assets/calculator.png",
+			"icon": "./assets/calculator.icns",
 			"publisherName": "Danilo Ribeiro"
 		},
 		"nsis": {
@@ -46,7 +47,6 @@
 		},
 		"linux": {
 			"target": "deb",
-			"icon": "./assets/calculator.png",
 			"category": "Utility"
 		}
 	},
