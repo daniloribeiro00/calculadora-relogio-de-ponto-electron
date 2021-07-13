@@ -15,7 +15,8 @@
 		"lint": "eslint . --ext js,ts",
 		"test": "jest",
 		"pack": "electron-builder --dir",
-		"dist": "electron-builder"
+		"dist:windows": "yarn electron-forge package && yarn electron-builder --x64 --ia32",
+		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --x64 --ia32"
 	},
 	"build": {
 		"appId": "com.calculadoradehoras.app",
