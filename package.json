@@ -1,6 +1,9 @@
 {
 	"name": "calculadora-relogio-de-ponto-electron",
-	"author": "Danilo Ribeiro",
+	"author": {
+		"name": "Danilo Ribeiro",
+		"email": "danilo.ribeiro00d@gmail.com"
+	},
 	"version": "1.0.0",
 	"description": "Calculadora de Horas Trabalhadas",
 	"main": "./.webpack/main/index.js",
@@ -41,7 +44,7 @@
 			"include": "./assets/installer.nsh"
 		},
 		"linux": {
-			"target": "AppImage",
+			"target": "deb",
 			"icon": "./assets/calculator.png",
 			"category": "Utility"
 		}
