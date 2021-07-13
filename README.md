@@ -84,19 +84,13 @@ OBS: Para criar o instalador para Linux utilizando uma máquina com Windows, sig
 docker pull electronuserland/builder
 ```
 
-3 - Vá até a pasta do projeto:
-
-```bash
-cd C:\<caminho-da-pasta-do-projeto>
-```
-
-4 - Execute o seguinte comando para inicializar o container:
+3 - Execute o seguinte comando com o caminho da pasta raíz do projeto para inicializar o container:
 
 ```bash
 docker run --rm -ti -v C:\<caminho-da-pasta-do-projeto>\:/project -w /project electronuserland/builder
 ```
 
-5 - Abra o Docker, inicie o terminal do container e digite os seguintes comandos:
+4 - Abra o Docker, inicie o terminal do container e digite os seguintes comandos:
 
 ```bash
 cd /project
@@ -105,7 +99,7 @@ yarn global add electron-builder
 yarn dist:linux <ou> yarn dist:linux-arm
 ```
 
-6 - O arquivo será criado na pasta `dist`.
+5 - O arquivo será criado na pasta `dist`.
 
 <hr>
 
