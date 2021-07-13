@@ -38,12 +38,12 @@
 			"uninstallerSidebar": "./assets/installerSidebar.bmp",
 			"uninstallDisplayName": "Calculadora de Horas Trabalhadas",
 			"license": "./assets/license.txt",
-			"artifactName": "Calculadora de Horas Trabalhadas",
 			"include": "./assets/installer.nsh"
 		},
 		"linux": {
 			"target": "AppImage",
-			"icon": "./assets/favicon.ico"
+			"icon": "./assets/calculator.png",
+			"category": "Utility"
 		}
 	},
 	"keywords": [],
