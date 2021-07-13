@@ -34,24 +34,44 @@ Para gerar arquivos instaladores da aplicação, execute um dos seguintes comand
 
 Os arquivos serão criados na pasta `dist`.
 
-### Windows
+### Windows (32bits e 64bits)
 
 ```bash
 yarn dist:windows
 ```
 
-### MacOS
+### Windows (ARM 64bits)
+
+```bash
+yarn dist:windows-arm
+```
+
+### MacOS (Intel)
 (OBS: Necessário estar em uma máquina com MacOS)
 
 ```bash
 yarn dist:mac
 ```
 
-### Linux
+### MacOS (Apple Silicon)
+(OBS: Necessário estar em uma máquina com MacOS)
+
+```bash
+yarn dist:mac-arm
+```
+
+### Linux (32bits e 64bits)
 (Utilizando uma máquina com Linux ou MacOS)
 
 ```bash
 yarn dist:linux
+```
+
+### Linux (ARM 64bits)
+(Utilizando uma máquina com Linux ou MacOS)
+
+```bash
+yarn dist:linux-arm
 ```
 
 OBS: Para criar o instalador para Linux utilizando uma máquina com Windows, siga os passos abaixo:
@@ -67,13 +87,13 @@ docker pull electronuserland/builder
 3 - Vá até a pasta do projeto:
 
 ```bash
-cd C:\<caminho da pasta do projeto>
+cd C:\<caminho-da-pasta-do-projeto>
 ```
 
-4 - Execute o seguinte comando para inciarlizar o container:
+4 - Execute o seguinte comando para incializar o container:
 
 ```bash
-docker run --rm -ti -v C:\<caminho da pasta do projeto>\:/project -w /project electronuserland/builder
+docker run --rm -ti -v C:\<caminho-da-pasta-do-projeto>\:/project -w /project electronuserland/builder
 ```
 
 5 - Abra o Docker, inicie o terminal do container e digite os seguintes comandos:
@@ -82,7 +102,7 @@ docker run --rm -ti -v C:\<caminho da pasta do projeto>\:/project -w /project el
 cd /project
 yarn upgrade
 yarn global add electron-builder
-yarn dist:linux
+yarn dist:linux <ou> yarn dist:linux-arm
 ```
 
 6 - O arquivo será criado na pasta `dist`.
