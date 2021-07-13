@@ -90,7 +90,7 @@ docker pull electronuserland/builder
 cd C:\<caminho-da-pasta-do-projeto>
 ```
 
-4 - Execute o seguinte comando para incializar o container:
+4 - Execute o seguinte comando para inicializar o container:
 
 ```bash
 docker run --rm -ti -v C:\<caminho-da-pasta-do-projeto>\:/project -w /project electronuserland/builder
