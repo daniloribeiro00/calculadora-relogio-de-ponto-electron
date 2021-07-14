@@ -1,4 +1,4 @@
-# Calculadora de Horas Trabalhadas (Relógio de Ponto)
+# Calculadora de Horas Trabalhadas (Relógio de Ponto) - Versão Desktop
 
 Calculadora de Horas Trabalhadas (Relógio de Ponto) desenvolvida com [Electron](https://www.electronjs.org), [React JS](https://pt-br.reactjs.org), [TypeScript](https://www.typescriptlang.org/pt/) e [Styled Components](https://styled-components.com).
 
