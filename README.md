@@ -16,7 +16,7 @@ Insira os horários de início da jornada, saída para intervalo, retorno do int
 
 <br>
 
-Veja também a versão web [aqui](https://calculadoradehoras.vercel.app).
+Veja também a versão web [aqui](https://github.com/daniloribeiro00/calculadora-relogio-de-ponto-next).
 
 <br>
 <hr>
