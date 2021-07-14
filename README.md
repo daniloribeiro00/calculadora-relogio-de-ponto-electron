@@ -7,7 +7,7 @@ Calculadora de Horas Trabalhadas (Relógio de Ponto) desenvolvida com [Electron]
 Possui dois modos de funcionamento:
 
 ### 1 - Calcular o horário de saída:
-Insira os horários de início da jornada, saída para intervalo, retorno do intervalo e o total de horas que deseja / precisa trabalhar. Baseado nesses dados, a aplicação irá calcular o horário de término da jornada.
+Insira os horários de início da jornada, saída para intervalo, retorno do intervalo e o total de horas que deseja / precisa trabalhar. Baseando-se nesses dados, a aplicação irá calcular o horário de término da jornada.
 
 <br>
 
