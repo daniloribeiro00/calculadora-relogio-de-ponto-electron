@@ -2,13 +2,29 @@
 
 Calculadora de Horas Trabalhadas (Relógio de Ponto) desenvolvida com [Electron](https://www.electronjs.org), [React JS](https://pt-br.reactjs.org), [TypeScript](https://www.typescriptlang.org/pt/) e [Styled Components](https://styled-components.com).
 
-Baseado no boilerplate desenvolvido por Diego Fernandes, disponível [aqui](https://github.com/diego3g/electron-typescript-react).
+<br>
 
+Possui dois modos de funcionamento:
+
+### 1 - Calcular o horário de saída:
+Insira os horários de início da jornada, saída para intervalo, retorno do intervalo e o total de horas que deseja / precisa trabalhar. Baseado nesses dados, a aplicação irá calcular o horário de término da jornada.
+
+<br>
+
+### 2 - Calcular o total de horas trabalhadas:
+Insira os horários de início da jornada, saída para intervalo, retorno do intervalo e término da jornada. A aplicação então calculará o total de horas trabalhadas.
+
+<br>
+
+Veja também a versão web [aqui](https://calculadoradehoras.vercel.app).
+
+<br>
 <hr>
+<br>
 
-## Instalação
+## Instalação:
 
-OBS: É necessário ter o [Node.js](https://nodejs.org/pt-br/) e o [Yarn](https://yarnpkg.com) instalado em sua máquina.
+OBS: É necessário ter o [Node.js](https://nodejs.org/pt-br/) e o [Yarn](https://yarnpkg.com) instalados em sua máquina.
 
 Clone o repositório para sua máquina e, em seguida, execute o seguinte comando:
 
@@ -16,9 +32,11 @@ Clone o repositório para sua máquina e, em seguida, execute o seguinte comando
 yarn
 ```
 
+<br>
 <hr>
+<br>
 
-## Execução
+## Execução:
 
 Para executar a aplicação, execute o comando abaixo:
 
@@ -26,83 +44,119 @@ Para executar a aplicação, execute o comando abaixo:
 yarn start
 ```
 
+<br>
 <hr>
+<br>
 
-## Exportação de Instaladores
+## Exportação de Instaladores:
 
 Para gerar arquivos instaladores da aplicação, execute um dos seguintes comandos:
 
-Os arquivos serão criados na pasta `dist`.
+Os arquivos serão criados na pasta `/dist`.
 
-### Windows (32bits e 64bits)
+<br>
 
-```bash
-yarn dist:windows
-```
+### Windows:
 
-### Windows (ARM 64bits)
+- #### 32bits / 64bits
 
-```bash
-yarn dist:windows-arm
-```
+    ```bash
+    yarn dist:windows
+    ```
 
-### MacOS (Intel)
+- #### ARM 64bits
+
+    ```bash
+    yarn dist:windows-arm
+    ```
+
+<br>
+
+### MacOS:
+
 (OBS: Necessário estar em uma máquina com MacOS)
 
-```bash
-yarn dist:mac
-```
+- #### Intel 32 bits
 
-### MacOS (Apple Silicon)
-(OBS: Necessário estar em uma máquina com MacOS)
+    No momento, a criação de instaladores para Macs com processador Intel de 32 bits pelo Electron Builder encontra-se indisponível.
 
-```bash
-yarn dist:mac-arm
-```
+- #### Intel 64 bits
 
-### Linux (32bits e 64bits)
+    ```bash
+    yarn dist:mac
+    ```
+
+- #### Apple Silicon
+
+    ```bash
+    yarn dist:mac-arm
+    ```
+
+<br>
+
+### Linux:
+
 (Utilizando uma máquina com Linux ou MacOS)
 
-```bash
-yarn dist:linux
-```
+- #### 32bits / 64bits
 
-### Linux (ARM 64bits)
-(Utilizando uma máquina com Linux ou MacOS)
+    ```bash
+    yarn dist:linux
+    ```
 
-```bash
-yarn dist:linux-arm
-```
+- #### ARM 64bits
 
-OBS: Para criar o instalador para Linux utilizando uma máquina com Windows, siga os passos abaixo:
+    ```bash
+    yarn dist:linux-arm
+    ```
 
-1 - Instale o [Docker](https://docs.docker.com/get-docker/).
+#### Observação:
 
-2 - Execute o seguinte comando pelo PowerShell:
+- #### Criando instalador para Linux utilizando uma máquina com Windows:
 
-```bash
-docker pull electronuserland/builder
-```
+    Infelizmente, devido à indisponibilidade do electron-build-service ([saiba mais](https://github.com/electron-userland/electron-build-service/issues/9)), para criar um instalador para Linux utilizando uma máquina com Windows siga os passos abaixo:
 
-3 - Execute o seguinte comando com o caminho da pasta raíz do projeto para inicializar o container:
+    1 - Instale o [Docker](https://docs.docker.com/get-docker/).
 
-```bash
-docker run --rm -ti -v C:\<caminho-da-pasta-do-projeto>\:/project -w /project electronuserland/builder
-```
+    2 - Execute o seguinte comando pelo PowerShell:
 
-4 - Abra o Docker, inicie o terminal do container e digite os seguintes comandos:
+    ```bash
+    docker pull electronuserland/builder
+    ```
 
-```bash
-cd /project
-yarn upgrade
-yarn global add electron-builder
-yarn dist:linux <ou> yarn dist:linux-arm
-```
+    3 - Execute o seguinte comando com o caminho da pasta raíz do projeto para inicializar o container:
 
-5 - O arquivo será criado na pasta `dist`.
+    ```bash
+    docker run --rm -ti -v C:\caminho-da-pasta-do-projeto\:/project -w /project electronuserland/builder
+    ```
 
+    4 - Abra o Docker, inicie o terminal do container e digite os seguintes comandos:
+
+    ```bash
+    cd /project
+    yarn upgrade
+    yarn global add electron-builder
+    yarn dist:linux <-ou-> yarn dist:linux-arm
+    ```
+
+    5 - O arquivo será criado na pasta `/dist`.
+
+<br>
 <hr>
+<br>
 
-## Licença
+## Créditos:
+
+Baseado no boilerplate desenvolvido por Diego Fernandes, disponível [aqui](https://github.com/diego3g/electron-typescript-react).
+
+Solução para criação de instalados do Linux em máquinas com Windows disponibilizada por Darkseal [aqui](https://github.com/electron-userland/electron-build-service/issues/9#issuecomment-704069238).
+
+Icons made by [Freepik](https://www.freepik.com) from [flaticon](https://www.flaticon.com/).
+
+<br>
+<hr>
+<br>
+
+## Licença:
 
 [MIT](https://choosealicense.com/licenses/mit/)
