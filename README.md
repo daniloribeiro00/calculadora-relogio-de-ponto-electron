@@ -147,7 +147,7 @@ Os arquivos serão criados na pasta `/dist`.
 
 ## Problemas conhecidos:
 
-Caso algum dos script gere erro, apague as pastas `/.webpack` (NÃO CONFUNDIR COM `/webpack`), `/dist` e `/out`, e execute o script desejado novamente.
+Caso algum dos script gere erro, apague as pastas `/dist` e `/out` e `/.webpack` (NÃO CONFUNDIR COM `/webpack`), e execute o script desejado novamente.
 
 <br>
 <hr>
