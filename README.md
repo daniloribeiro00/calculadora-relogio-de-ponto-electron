@@ -145,6 +145,14 @@ Os arquivos serão criados na pasta `/dist`.
 <hr>
 <br>
 
+## Problemas conhecidos:
+
+Caso algum dos script gere erro, apague as pastas `/.webpack` (NÃO CONFUNDIR COM `/webpack`), `/dist` e `/out`, e execute o script desejado novamente.
+
+<br>
+<hr>
+<br>
+
 ## Créditos:
 
 Baseado no boilerplate desenvolvido por Diego Fernandes, disponível [aqui](https://github.com/diego3g/electron-typescript-react).
