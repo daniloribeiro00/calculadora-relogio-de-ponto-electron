@@ -15,6 +15,7 @@
 		"lint": "eslint . --ext js,ts",
 		"test": "jest",
 		"pack": "electron-builder --dir",
+		"dist": "yarn electron-forge package && yarn electron-builder",
 		"dist:windows": "yarn electron-forge package && yarn electron-builder --windows --ia32 --x64",
 		"dist:windows-arm": "yarn electron-forge package && yarn electron-builder --windows --arm64",
 		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --ia32 --x64",

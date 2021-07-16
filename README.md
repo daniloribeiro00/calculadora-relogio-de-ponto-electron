@@ -56,6 +56,14 @@ Os arquivos serão criados na pasta `/dist`.
 
 <br>
 
+### Para o sistema operacional que você está utilizando no momento:
+
+```bash
+yarn dist
+```
+
+<br>
+
 ### Windows:
 
 - #### 32bits / 64bits
