@@ -37,6 +37,29 @@ export const Selection = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 1200px) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	@media (max-width: 800px) {
+		flex-direction: column;
+
+		form {
+			gap: 0.5rem;
+
+			div {
+				margin-left: 1rem;
+				margin-right: 1rem;
+
+				input {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
 `;
 
 export const Container = styled.main`
@@ -140,8 +163,8 @@ export const Container = styled.main`
 	.total {
 		margin-top: 2rem;
 		border-top: 1px solid #ccc;
-
 		width: 100%;
+
 		.result {
 			display: flex;
 			flex-direction: column;
@@ -173,6 +196,10 @@ export const Container = styled.main`
 				display: flex;
 				flex-direction: column;
 			}
+
+			h2 {
+				font-size: 1.4rem;
+			}
 		}
 	}
 
@@ -180,6 +207,11 @@ export const Container = styled.main`
 		.total {
 			.result {
 				flex-direction: row;
+				justify-content: space-between;
+
+				h2 {
+					font-size: 1.2rem;
+				}
 			}
 		}
 	}
